@@ -195,4 +195,20 @@ test/               # Minitest tests
 ## Useful Links
 
 - API Client: https://github.com/ncbo/ontologies_api_ruby_client
-- Architecture diagram: https://github.com/berkeleybop/bioportal-development-guide/blob/main/files/BioPortal_Architecture.pdf
+- Architecture diagram: see the private guide repo (link below; access required)
+
+## Private developer guide repo
+
+Some developer context lives in the **private** companion repo
+`berkeleybop/bioportal-development-guide` (access required). The general-purpose
+dev-environment scaffolding (Dockerfile, entrypoint, config templates) has been
+migrated here into `developer/`, but two things intentionally remain *only* in
+the private repo and must **not** be copied into this public repository:
+
+- The conceptual **architecture diagram** (`files/BioPortal_Architecture.pdf`) —
+  private correspondence from the BioPortal developers.
+- The **staging-environment server locations** (REST/proxy URLs and the
+  account-lookup pattern), in that repo's `DEVELOPER_SETUP.md` — the BioPortal
+  developers have asked that these not be published anywhere public.
+
+Point to the private repo for these; do not reproduce their contents here.
